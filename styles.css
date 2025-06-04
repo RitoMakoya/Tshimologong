@@ -1,0 +1,217 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: normal;
+    display: block;
+    text-align: left;
+    width: 60%;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #007BFF;
+    text-align: left;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    font-size: 14px;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+/* Favorite Food Section */
+p {
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+/* Legend Inline */
+legend {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+/* Checkbox Labels in Fieldset */
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Default blue borders for table cells */
+th, td {
+    border: 2px solid #007BFF;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Black border for first row (header) */
+thead tr th {
+    border: 2px solid black;
+}
+
+th {
+    background-color: #c0c1c2;
+    color: rgb(10, 10, 10);
+}
+
+/* Submit Button */
+button {
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* General Checkbox Styling (Blue Square) */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #007BFF;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Circular Blue Checkboxes in Table */
+table input[type="checkbox"] {
+    border-radius: 50%;
+}
+
+table input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    transform: none;
+}
+
+/* Radio Buttons Styling (Circular and Blue) */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background-color: #007BFF;
+    border-radius: 50%;
+}
